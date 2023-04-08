@@ -1,0 +1,10 @@
+curl --location --request POST 'http://localhost:8080/send-message' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "domain":"teste",
+    "endpoints":[
+        "http://teste1",
+        "http://teste2",
+        "http://teste3"
+    ]
+}'
